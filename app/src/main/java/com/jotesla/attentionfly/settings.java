@@ -8,6 +8,10 @@ import android.view.View;
 
 public class settings extends Activity {
     //Settings Vars
+    protected boolean game_is_running;
+    SharedPreferences preferences;
+    SharedPreferences.Editor prefEditor;
+
     public static class appSettings{
 
         public boolean start_w_settings;
@@ -23,10 +27,6 @@ public class settings extends Activity {
             }
         }
     }
-
-    protected boolean game_is_running;
-    SharedPreferences preferences;
-    SharedPreferences.Editor prefEditor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
