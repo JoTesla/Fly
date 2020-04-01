@@ -39,7 +39,15 @@ public class settings extends Activity {
 
     }
 
-    public void loadSettings(appSettings.field field) {
+    public void loadSettings(appSettings AppSettings) {
+
+    }
+
+    public void saveSettings(appSettings AppSettings){
+
+    }
+
+    public void applySettings() {
 
     }
 }
