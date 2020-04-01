@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Attention Fly</string>
+    <string name="start_button">Поехали!</string>
+    <string name="radio_difficulty1">Просто</string>
+    <string name="radio_difficulty2">Сложно</string>
+    <string name="stop_button">Стоп</string>
+    <string name="stop_button2">Настройки</string>
+    <string name="GameField">Игровое поле</string>
+    <string name="ok_button">Применить</string>
+    <string name="title_text">Внимание, муха!</string>
+    <string name="settings_activity">Настройки</string>
+    <string name="easy_description">Выберите поле 3х3, его проще удержать в голове.</string>
+    <string name="hard_description">Выберите поле 4х4, с ним сложнее справиться.</string>
+    <string name="difficulty_level">Уровень сложности</string>
+    <string name="cancel_button">Отмена</string>
+    <string name="start_w_saved">Всегда начинать игру с этими настройками.</string>
+</resources>
+
