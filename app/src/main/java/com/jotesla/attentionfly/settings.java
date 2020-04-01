@@ -21,7 +21,7 @@ public class settings extends Activity {
         }
     }
 
-    protected boolean game_is_run;
+    protected boolean game_is_running;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class settings extends Activity {
     }
 
     public void appRun() {
-        game_is_run = false;
+        game_is_running = false;
         appSettings.field field = new appSettings.field();
 
     }
