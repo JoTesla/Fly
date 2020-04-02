@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".GameField" android:label="@string/GameField"></activity>
-        <activity android:name=".settings" android:label="@string/settings_activity"></activity>
+        <activity android:name=".Settings" android:label="@string/settings_activity"></activity>
     </application>
 
 </manifest>
