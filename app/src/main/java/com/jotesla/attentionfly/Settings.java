@@ -10,7 +10,7 @@ public class Settings extends Activity {
     //Settings Vars
     protected boolean game_is_running = false;
 
-    SharedPreferences preferences;
+    static SharedPreferences preferences;
     SharedPreferences.Editor prefEditor;
 
     public static AppSettings appSettings;
@@ -32,6 +32,7 @@ public class Settings extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
         preferences = getSharedPreferences(AppSettings.mainFile,MODE_PRIVATE);
+        prefEditor = preferences.edit();
     }
     public void onClickApply(View view){
         Intent intent = new Intent(Settings.this, MainActivity.class);
@@ -39,21 +40,25 @@ public class Settings extends Activity {
     }
 
     public void appRun() {
-
         //appSettings.field field = new appSettings.field();
     }
 
-    public AppSettings loadSettings() {
+    public static AppSettings loadSettings() {
         AppSettings varAppSettings = new AppSettings();
-        varAppSettings.fields.cols.size = 3;
+        varAppSettings.field.cols.size = preferences.getInt(varAppSettings.field.cols.name,3);
+        varAppSettings.field.rows.size = preferences.getInt(varAppSettings.field.rows.name,3);
+        varAppSettings.options.sws.value = preferences.getBoolean(varAppSettings.options.sws.name, false);
+
         return varAppSettings;
     }
 
-    public void saveSettings(AppSettings AppSettings){
+    public static void applySettings(AppSettings appSettings) {
 
     }
 
-    public void applySettings() {
+    public static void saveSettings(AppSettings AppSettings){
 
     }
+
+
 }

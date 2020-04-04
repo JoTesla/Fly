@@ -8,15 +8,19 @@ import android.view.View;
 import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity {
-
+    Switch start_w_settings = (Switch) findViewById(R.id.start_w_saved);
+    AppSettings appSettings;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //поместить загрузку настроек при запуске
+        appSettings = Settings.loadSettings();
+        start_w_settings.setChecked(appSettings.options.sws.value);
     }
     public void onClickGo(View view){
-        Switch start_w_settings = (Switch) findViewById(R.id.start_w_saved);
+
+
         boolean e = start_w_settings.isChecked();
         Intent intent;
         if (e) {
@@ -24,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else
         {
-            intent = new Intent(MainActivity.this, settings.class);
+            intent = new Intent(MainActivity.this, Settings.class);
         }
 
         startActivity(intent);
