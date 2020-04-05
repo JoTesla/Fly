@@ -32,19 +32,5 @@ public class MainActivity extends AppCompatActivity {
         else {intent = new Intent(MainActivity.this, Settings.class);}
         startActivity(intent);
     }
-/*
-    @Override
-    protected void onStop() {
-        super.onStop();
-        start_w_settings = findViewById(R.id.start_w_saved);
-        radio3x3 =  findViewById(R.id.radioButton);
-        radio4x4 =  findViewById(R.id.radioButton2);
-        int i=3;
-        if (radio3x3.isChecked()) {i = 3;}
-        if (radio4x4.isChecked()) {i = 4;}
-        prefEditor = pref.edit();
-        prefEditor.putInt("field_size",i);
-        prefEditor.putBoolean("start_w_settings",start_w_settings.isChecked());
-        prefEditor.apply();
-    } */
+
 }
