@@ -5,15 +5,19 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+//import android.view.WindowManager;
+import android.widget.RadioButton;
+import android.widget.Switch;
 
 public class Settings extends Activity {
     //Settings Vars
-    protected boolean game_is_running = false;
+    private boolean game_is_running = false;
+    private Switch start_w_settings;
+    private RadioButton radio3x3;
+    private RadioButton radio4x4;
+    private static SharedPreferences pref;
+    private static SharedPreferences.Editor prefEditor;
 
-    static SharedPreferences preferences;
-    SharedPreferences.Editor prefEditor;
-
-    public static AppSettings appSettings;
 
     public void gameStart(){
         game_is_running = true;
@@ -31,34 +35,22 @@ public class Settings extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
-        preferences = getSharedPreferences(AppSettings.mainFile,MODE_PRIVATE);
-        prefEditor = preferences.edit();
     }
     public void onClickApply(View view){
+
+        start_w_settings = findViewById(R.id.start_w_saved);
+        radio3x3 =  findViewById(R.id.radioButton);
+        radio4x4 =  findViewById(R.id.radioButton2);
+        pref = getSharedPreferences("Global",MODE_PRIVATE);
+        prefEditor = pref.edit();
+        int i = 3;
+        if (radio3x3.isChecked()){i=3;}
+        if (radio4x4.isChecked()){i=4;}
+        prefEditor.putInt("field_size",i);
+        prefEditor.putBoolean("start_w_settings",start_w_settings.isChecked());
+        prefEditor.apply();
         Intent intent = new Intent(Settings.this, MainActivity.class);
         startActivity(intent);
     }
-
-    public void appRun() {
-        //appSettings.field field = new appSettings.field();
-    }
-
-    public static AppSettings loadSettings() {
-        AppSettings varAppSettings = new AppSettings();
-        varAppSettings.field.cols.size = preferences.getInt(varAppSettings.field.cols.name,3);
-        varAppSettings.field.rows.size = preferences.getInt(varAppSettings.field.rows.name,3);
-        varAppSettings.options.sws.value = preferences.getBoolean(varAppSettings.options.sws.name, false);
-
-        return varAppSettings;
-    }
-
-    public static void applySettings(AppSettings appSettings) {
-
-    }
-
-    public static void saveSettings(AppSettings AppSettings){
-
-    }
-
 
 }

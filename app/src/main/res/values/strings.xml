@@ -6,7 +6,7 @@
     <string name="stop_button">Стоп</string>
     <string name="stop_button2">Настройки</string>
     <string name="GameField">Игровое поле</string>
-    <string name="ok_button">Применить</string>
+    <string name="ok_button">ОК</string>
     <string name="title_text">Внимание, муха!</string>
     <string name="settings_activity">Настройки</string>
     <string name="easy_description">Выберите поле 3х3, его проще удержать в голове.</string>
