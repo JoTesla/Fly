@@ -6,7 +6,138 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/switch1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/picture_desc"
+                app:srcCompat="@mipmap/square"
+                tools:srcCompat="@mipmap/square" />
+
+            <ImageButton
+                android:id="@+id/imageButton12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/picture_desc"
+                app:srcCompat="@mipmap/square"
+                tools:srcCompat="@mipmap/square" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/picture_desc"
+                app:srcCompat="@mipmap/square"
+                tools:srcCompat="@mipmap/square" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imageButton21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/picture_desc"
+                app:srcCompat="@mipmap/square"
+                tools:srcCompat="@mipmap/square" />
+
+            <ImageButton
+                android:id="@+id/imageButton22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/picture_desc"
+                app:srcCompat="@mipmap/fly"
+                tools:srcCompat="@mipmap/fly" />
+
+            <ImageButton
+                android:id="@+id/imageButton23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/picture_desc"
+                app:srcCompat="@mipmap/square"
+                tools:srcCompat="@mipmap/square" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imageButton31"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/picture_desc"
+                app:srcCompat="@mipmap/square"
+                tools:srcCompat="@mipmap/square" />
+
+            <ImageButton
+                android:id="@+id/imageButton32"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/picture_desc"
+                app:srcCompat="@mipmap/square"
+                tools:srcCompat="@mipmap/square" />
+
+            <ImageButton
+                android:id="@+id/imageButton33"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/picture_desc"
+                app:srcCompat="@mipmap/square"
+                tools:srcCompat="@mipmap/square" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+    <!--LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="400dp"
         android:layout_height="370dp"
@@ -19,113 +150,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-                <ImageButton
-                    android:id="@+id/imageButton11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/picture_desc"
-                    app:srcCompat="@android:drawable/title_bar" />
-
-                <ImageButton
-                    android:id="@+id/imageButton12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/picture_desc"
-                    app:srcCompat="@android:drawable/title_bar" />
-
-                <ImageButton
-                    android:id="@+id/imageButton13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/picture_desc"
-                    app:srcCompat="@android:drawable/title_bar" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/imageButton21"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/picture_desc"
-                    app:srcCompat="@android:drawable/title_bar" />
-
-                <ImageButton
-                    android:id="@+id/imageButton22"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/picture_desc"
-                    app:srcCompat="@android:drawable/sym_def_app_icon" />
-
-                <ImageButton
-                    android:id="@+id/imageButton23"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/picture_desc"
-                    app:srcCompat="@android:drawable/title_bar" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/imageButton31"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/picture_desc"
-                    app:srcCompat="@android:drawable/title_bar" />
-
-                <ImageButton
-                    android:id="@+id/imageButton32"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/picture_desc"
-                    app:srcCompat="@android:drawable/title_bar" />
-
-                <ImageButton
-                    android:id="@+id/imageButton33"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/picture_desc"
-                    app:srcCompat="@android:drawable/title_bar" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </TableLayout>
-
-    </LinearLayout>
+    </LinearLayout-->
 
     <Switch
         android:id="@+id/switch1"

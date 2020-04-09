@@ -12,7 +12,7 @@ import android.widget.Switch;
 public class Settings extends Activity {
     //Settings Vars
     private boolean game_is_running = false;
-    private Switch start_w_settings;
+    //private Switch start_w_settings;
     private RadioButton radio3x3;
     private RadioButton radio4x4;
     private SharedPreferences pref;
@@ -40,7 +40,7 @@ public class Settings extends Activity {
     @Override
     protected void onStart() {
         super.onStart();
-        start_w_settings = findViewById(R.id.start_w_saved);
+        //start_w_settings = findViewById(R.id.start_w_saved);
         radio3x3 =  findViewById(R.id.radioButton);
         radio4x4 =  findViewById(R.id.radioButton2);
 
@@ -50,12 +50,12 @@ public class Settings extends Activity {
             case 3: radio3x3.setChecked(true); break;
             case 4: radio4x4.setChecked(true); break;
         }
-        start_w_settings.setChecked(pref.getBoolean("start_w_settings",false));
+        //start_w_settings.setChecked(pref.getBoolean("start_w_settings",false));
     }
 
     public void onClickApply(View view){
 
-        start_w_settings = findViewById(R.id.start_w_saved);
+        //start_w_settings = findViewById(R.id.start_w_saved);
         radio3x3 =  findViewById(R.id.radioButton);
         radio4x4 =  findViewById(R.id.radioButton2);
         pref = getSharedPreferences("Global",MODE_PRIVATE);
@@ -64,10 +64,11 @@ public class Settings extends Activity {
         if (radio3x3.isChecked()){i=3;}
         if (radio4x4.isChecked()){i=4;}
         prefEditor.putInt("field_size",i);
-        prefEditor.putBoolean("start_w_settings",start_w_settings.isChecked());
+        //prefEditor.putBoolean("start_w_settings",start_w_settings.isChecked());
         prefEditor.apply();
-        Intent intent = new Intent(Settings.this, MainActivity.class);
-        startActivity(intent);
+        //Intent intent = new Intent(Settings.this, MainActivity.class);
+        //startActivity(intent);
+        finish();
     }
 
 }

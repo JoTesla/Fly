@@ -15,8 +15,9 @@ public class GameField extends Activity {
     }
 
     public void onClickStop(View view){
-        Intent intent = new Intent(GameField.this, MainActivity.class);
-        startActivity(intent);
+        //Intent intent = new Intent(GameField.this, MainActivity.class);
+        //startActivity(intent);
+        finish();
     }
 
     public void onClickSettings(View view){
