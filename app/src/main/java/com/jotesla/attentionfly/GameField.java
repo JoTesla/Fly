@@ -32,4 +32,14 @@ public class GameField extends Activity {
 
         startActivity(intent);
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        resetGame();
+    }
+
+    public void resetGame(){
+        //!
+    }
 }

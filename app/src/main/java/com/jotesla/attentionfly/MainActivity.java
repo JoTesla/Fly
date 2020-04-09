@@ -20,18 +20,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickGo(View view){
-        SharedPreferences pref;
-        pref = getSharedPreferences("Global",MODE_PRIVATE);
-        boolean sws = pref.getBoolean("start_w_settings", false);//start_w_settings.isChecked();
+        //SharedPreferences pref;
+        //pref = getSharedPreferences("Global",MODE_PRIVATE);
+       // boolean sws = pref.getBoolean("start_w_settings", false);//start_w_settings.isChecked();
         Intent intent;
-        if (sws) {
+        int gameEndCode = 0;
+       // if (sws) {
             intent = new Intent(MainActivity.this, GameField.class);
             /*
             intent.putExtra("start_w_settings",pref.getBoolean("start_w_settings", false));
             intent.putExtra("field_size",pref.getInt("field_size",3));*/
-        }
-        else {intent = new Intent(MainActivity.this, Settings.class);}
-        startActivity(intent);
+       // }
+       // else {intent = new Intent(MainActivity.this, Settings.class);}
+        startActivityForResult(intent, gameEndCode);
     }
 
 }
