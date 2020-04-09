@@ -15,8 +15,8 @@ public class Settings extends Activity {
     private Switch start_w_settings;
     private RadioButton radio3x3;
     private RadioButton radio4x4;
-    private static SharedPreferences pref;
-    private static SharedPreferences.Editor prefEditor;
+    private SharedPreferences pref;
+    private SharedPreferences.Editor prefEditor;
 
 
     public void gameStart(){
@@ -36,6 +36,23 @@ public class Settings extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        start_w_settings = findViewById(R.id.start_w_saved);
+        radio3x3 =  findViewById(R.id.radioButton);
+        radio4x4 =  findViewById(R.id.radioButton2);
+
+        pref = getSharedPreferences("Global",MODE_PRIVATE);
+        int i = pref.getInt("field_size",3);
+        switch (i){
+            case 3: radio3x3.setChecked(true); break;
+            case 4: radio4x4.setChecked(true); break;
+        }
+        start_w_settings.setChecked(pref.getBoolean("start_w_settings",false));
+    }
+
     public void onClickApply(View view){
 
         start_w_settings = findViewById(R.id.start_w_saved);

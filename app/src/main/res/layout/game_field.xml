@@ -7,19 +7,17 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="681dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="400dp"
+        android:layout_height="370dp"
         android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="1dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableLayout
             android:layout_width="match_parent"
@@ -34,21 +32,27 @@
                     android:id="@+id/imageButton11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="@string/picture_desc"
                     app:srcCompat="@android:drawable/title_bar" />
 
                 <ImageButton
                     android:id="@+id/imageButton12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="@string/picture_desc"
                     app:srcCompat="@android:drawable/title_bar" />
 
                 <ImageButton
                     android:id="@+id/imageButton13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="@string/picture_desc"
                     app:srcCompat="@android:drawable/title_bar" />
             </TableRow>
 
@@ -60,21 +64,27 @@
                     android:id="@+id/imageButton21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="@string/picture_desc"
                     app:srcCompat="@android:drawable/title_bar" />
 
                 <ImageButton
                     android:id="@+id/imageButton22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="@string/picture_desc"
                     app:srcCompat="@android:drawable/sym_def_app_icon" />
 
                 <ImageButton
                     android:id="@+id/imageButton23"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="@string/picture_desc"
                     app:srcCompat="@android:drawable/title_bar" />
             </TableRow>
 
@@ -86,21 +96,27 @@
                     android:id="@+id/imageButton31"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="@string/picture_desc"
                     app:srcCompat="@android:drawable/title_bar" />
 
                 <ImageButton
                     android:id="@+id/imageButton32"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="@string/picture_desc"
                     app:srcCompat="@android:drawable/title_bar" />
 
                 <ImageButton
                     android:id="@+id/imageButton33"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="@string/picture_desc"
                     app:srcCompat="@android:drawable/title_bar" />
             </TableRow>
 
@@ -110,6 +126,15 @@
         </TableLayout>
 
     </LinearLayout>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/switch_hide_field"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout"

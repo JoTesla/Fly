@@ -21,10 +21,14 @@ public class GameField extends Activity {
 
     public void onClickSettings(View view){
         Intent intent = new Intent(GameField.this, Settings.class);
+
+        /*
         pref = getSharedPreferences("Global",MODE_PRIVATE);
         boolean sws = pref.getBoolean("start_w_settings", false);
         intent.putExtra("start_w_settings",pref.getBoolean("start_w_settings", false));
         intent.putExtra("field_size",pref.getInt("field_size",3));
+
+         */
 
         startActivity(intent);
     }

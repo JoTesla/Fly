@@ -10,7 +10,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static SharedPreferences pref;
+
 
 
     @Override
@@ -20,14 +20,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickGo(View view){
+        SharedPreferences pref;
         pref = getSharedPreferences("Global",MODE_PRIVATE);
-
         boolean sws = pref.getBoolean("start_w_settings", false);//start_w_settings.isChecked();
         Intent intent;
         if (sws) {
             intent = new Intent(MainActivity.this, GameField.class);
+            /*
             intent.putExtra("start_w_settings",pref.getBoolean("start_w_settings", false));
-            intent.putExtra("field_size",pref.getInt("field_size",3));
+            intent.putExtra("field_size",pref.getInt("field_size",3));*/
         }
         else {intent = new Intent(MainActivity.this, Settings.class);}
         startActivity(intent);
