@@ -13,7 +13,6 @@
     <string name="hard_description">Выберите поле 4х4, с ним сложнее справиться.</string>
     <string name="difficulty_level">Уровень сложности</string>
     <string name="cancel_button">Отмена</string>
-    <string name="start_w_saved">Всегда начинать игру с этими настройками.</string>
     <string name="picture_desc">Пикча</string>
     <string name="switch_hide_field">Скрыть поле</string>
 </resources>

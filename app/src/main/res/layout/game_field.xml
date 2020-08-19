@@ -7,8 +7,9 @@
     android:layout_height="match_parent">
 
     <TableLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@id/switch1"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,9 +28,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:background="#FFFFFF"
-                android:contentDescription="@string/picture_desc"
-                app:srcCompat="@mipmap/square"
-                tools:srcCompat="@mipmap/square" />
+                android:contentDescription="@string/picture_desc" />
 
             <ImageButton
                 android:id="@+id/imageButton12"
@@ -38,9 +37,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:background="#FFFFFF"
-                android:contentDescription="@string/picture_desc"
-                app:srcCompat="@mipmap/square"
-                tools:srcCompat="@mipmap/square" />
+                android:contentDescription="@string/picture_desc" />
 
             <ImageButton
                 android:id="@+id/imageButton13"
@@ -49,9 +46,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:background="#FFFFFF"
-                android:contentDescription="@string/picture_desc"
-                app:srcCompat="@mipmap/square"
-                tools:srcCompat="@mipmap/square" />
+                android:contentDescription="@string/picture_desc" />
         </TableRow>
 
         <TableRow
@@ -66,9 +61,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:background="#FFFFFF"
-                android:contentDescription="@string/picture_desc"
-                app:srcCompat="@mipmap/square"
-                tools:srcCompat="@mipmap/square" />
+                android:contentDescription="@string/picture_desc" />
 
             <ImageButton
                 android:id="@+id/imageButton22"
@@ -78,8 +71,8 @@
                 android:adjustViewBounds="false"
                 android:background="#FFFFFF"
                 android:contentDescription="@string/picture_desc"
-                app:srcCompat="@mipmap/fly"
-                tools:srcCompat="@mipmap/fly" />
+                app:srcCompat="@drawable/fly"
+                tools:srcCompat="@drawable/fly" />
 
             <ImageButton
                 android:id="@+id/imageButton23"
@@ -88,9 +81,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:background="#FFFFFF"
-                android:contentDescription="@string/picture_desc"
-                app:srcCompat="@mipmap/square"
-                tools:srcCompat="@mipmap/square" />
+                android:contentDescription="@string/picture_desc" />
         </TableRow>
 
         <TableRow
@@ -105,9 +96,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:background="#FFFFFF"
-                android:contentDescription="@string/picture_desc"
-                app:srcCompat="@mipmap/square"
-                tools:srcCompat="@mipmap/square" />
+                android:contentDescription="@string/picture_desc" />
 
             <ImageButton
                 android:id="@+id/imageButton32"
@@ -116,9 +105,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:background="#FFFFFF"
-                android:contentDescription="@string/picture_desc"
-                app:srcCompat="@mipmap/square"
-                tools:srcCompat="@mipmap/square" />
+                android:contentDescription="@string/picture_desc" />
 
             <ImageButton
                 android:id="@+id/imageButton33"
@@ -127,9 +114,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:background="#FFFFFF"
-                android:contentDescription="@string/picture_desc"
-                app:srcCompat="@mipmap/square"
-                tools:srcCompat="@mipmap/square" />
+                android:contentDescription="@string/picture_desc" />
         </TableRow>
 
         <TableRow
